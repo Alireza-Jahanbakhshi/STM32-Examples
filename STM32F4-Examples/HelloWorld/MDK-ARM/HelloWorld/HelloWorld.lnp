@@ -1,0 +1,26 @@
+--cpu=Cortex-M4.fp.sp
+"helloworld\startup_stm32f407xx.o"
+"helloworld\main.o"
+"helloworld\gpio.o"
+"helloworld\stm32f4xx_it.o"
+"helloworld\stm32f4xx_hal_msp.o"
+"helloworld\stm32f4xx_hal_tim.o"
+"helloworld\stm32f4xx_hal_tim_ex.o"
+"helloworld\stm32f4xx_hal_rcc.o"
+"helloworld\stm32f4xx_hal_rcc_ex.o"
+"helloworld\stm32f4xx_hal_flash.o"
+"helloworld\stm32f4xx_hal_flash_ex.o"
+"helloworld\stm32f4xx_hal_flash_ramfunc.o"
+"helloworld\stm32f4xx_hal_gpio.o"
+"helloworld\stm32f4xx_hal_dma_ex.o"
+"helloworld\stm32f4xx_hal_dma.o"
+"helloworld\stm32f4xx_hal_pwr.o"
+"helloworld\stm32f4xx_hal_pwr_ex.o"
+"helloworld\stm32f4xx_hal_cortex.o"
+"helloworld\stm32f4xx_hal.o"
+"helloworld\stm32f4xx_hal_exti.o"
+"helloworld\system_stm32f4xx.o"
+--strict --scatter "HelloWorld\HelloWorld.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "HelloWorld.map" -o HelloWorld\HelloWorld.axf
